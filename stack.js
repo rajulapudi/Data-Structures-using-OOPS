@@ -26,6 +26,9 @@ methods in stacks
      peek(){
         return this.items[this.items.length-1]
     }
+    length(){
+        return this.items.length
+    }
 
  }
 
@@ -42,5 +45,6 @@ methods in stacks
  console.log(stack.items)
  
 console.log (stack.peek())
+console.log (stack.length())
 
 
