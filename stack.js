@@ -23,6 +23,8 @@ methods in stacks
      pop(){
         this.items.pop()
      }
+
+
  }
 
  const stack = new Stack();
@@ -30,6 +32,13 @@ methods in stacks
  stack.push(22);
  stack.push(44);
  stack.push(33);
- stack.push(21);
+ stack.push(31);
 
  console.log(stack.items)
+
+ stack.pop()
+ console.log(stack.items)
+ 
+console.log (stack.peek())
+
+
