@@ -29,7 +29,19 @@ methods in stacks
     length(){
         return this.items.length
     }
-
+    traverse(){
+    for(let i = this.items.length-1; i>=0; i--){
+        return this.items[i]
+    } 
+    }
+    search(value){
+    for(let i = this.items.length-1; i>=0; i--){
+        if(this.items[i]=== value){
+            return `This ${value} is present in the Stack`
+        }else continue
+    }
+    return `this ${value} is not there`
+    }
  }
 
  const stack = new Stack();
@@ -42,9 +54,8 @@ methods in stacks
  console.log(stack.items)
 
  stack.pop()
- console.log(stack.items)
- 
+console.log(stack.items)
 console.log (stack.peek())
 console.log (stack.length())
-
+console.log(stack.search(22))
 
