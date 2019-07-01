@@ -21,7 +21,7 @@ methods in stacks
         this.items.push(value)
      }
      pop(){
-        this.items.pop()
+         return (this.items.length===0)? "Stack is empty" : this.items.pop()
      }
      peek(){
         return this.items[this.items.length-1]
